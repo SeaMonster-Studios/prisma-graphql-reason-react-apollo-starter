@@ -22,7 +22,7 @@ GraphQL/Prisma Backend + ReasonReact Apollo Frontend with typesafe graphql query
 
 You can run do all of this with one command from the root directory of the repo:
 
-> `yarn start`ls
+> `yarn start`
 
 Or, you can handle them separately in different terminal sessions:
 
