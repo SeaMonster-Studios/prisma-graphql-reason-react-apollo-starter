@@ -18,7 +18,7 @@ GraphQL/Prisma Backend + ReasonReact Apollo Frontend with typesafe graphql query
 
 - Copy the ui/.env.example file to ui/.env and be sure to provide all variables with values
 
-## Generate Fiels and Start the servers
+## Generate Files and Start the servers
 
 You can run do all of this with one command from the root directory of the repo:
 
