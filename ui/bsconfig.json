@@ -1,21 +1,21 @@
-
 {
   "name": "react-hooks-template",
   "reason": {
     "react-jsx": 3
   },
   "sources": {
-    "dir" : "src",
-    "subdirs" : true
+    "dir": "src",
+    "subdirs": true
   },
-  "package-specs": [{
-    "module": "commonjs",
-    "in-source": false
-  }],
+  "package-specs": [
+    {
+      "module": "commonjs",
+      "in-source": false
+    }
+  ],
   "suffix": ".bs.js",
   "namespace": true,
-  "bs-dependencies": [
-    "reason-react"
-  ],
-  "refmt": 3
+  "bs-dependencies": ["reason-react", "reason-apollo-hooks", "reason-apollo"],
+  "refmt": 3,
+  "ppx-flags": ["graphql_ppx/ppx"]
 }

@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "run-s deploy:local server:local",
-    "generate:types": "prisma generate",
+    "start": "run-s deploy:local,server:local",
     "server:local": "nodemon --watch src ./src/index.js",
     "deploy:local": "prisma deploy && cd database && docker-compose up -d"
   },

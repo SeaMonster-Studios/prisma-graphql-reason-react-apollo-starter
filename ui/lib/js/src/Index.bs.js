@@ -3,15 +3,13 @@
 
 var React = require("react");
 var ReactDOMRe = require("reason-react/lib/js/src/ReactDOMRe.js");
-var Component1$ReactHooksTemplate = require("./Component1.bs.js");
-var Component2$ReactHooksTemplate = require("./Component2.bs.js");
+var ReactHooks = require("@apollo/react-hooks");
+var App$ReactHooksTemplate = require("./App.bs.js");
+var GraphQLClient$ReactHooksTemplate = require("./GraphQLClient.bs.js");
 
-ReactDOMRe.renderToElementWithId(React.createElement(Component1$ReactHooksTemplate.make, {
-          message: "Hello! Click this text."
-        }), "index1");
-
-ReactDOMRe.renderToElementWithId(React.createElement(Component2$ReactHooksTemplate.make, {
-          greeting: "Hello!"
-        }), "index2");
+ReactDOMRe.renderToElementWithId(React.createElement(ReactHooks.ApolloProvider, {
+          client: GraphQLClient$ReactHooksTemplate.instance,
+          children: React.createElement(App$ReactHooksTemplate.make, { })
+        }), "root");
 
 /*  Not a pure module */
